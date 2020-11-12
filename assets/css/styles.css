@@ -1,0 +1,251 @@
+html, body {
+    /* box-sizing: border-box; */
+    padding:0;
+    margin:0;
+}
+.head3 {
+    color: #989A09;
+}
+.home {
+    background-color: red;
+
+}
+.test {
+  /* font-size: 100px;   */
+}
+.test1 p {
+    font-size: 2rem; 
+    color: white;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    background-color: red;
+    text-align: center;
+    padding: 100px 50px;
+} 
+.test1:hover {
+    background-color: teal;
+}
+.mybutton {
+    background-color: tomato;
+    cursor: pointer;
+}
+.mybutton:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.test1 ~ p {
+    color: white;
+    font-family: 'Times New Roman';
+    background-color: green;
+}
+.test2 {
+    font-size: 2rem; 
+    color: white;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    background-color: blueviolet;
+    /* width: 100px;
+    margin-left:
+    margin-right:
+    margin-bottom:
+    margin-top: */
+     
+}
+/* Absolute units 
+- 100px
+
+Relative units
+- em ()
+- rem ()
+ */
+/* selector {
+    property: value
+} */
+.paris-img {
+    opacity: 0.6;
+}
+
+.paris-img:hover {
+    opacity: 1;
+}
+
+.wrapper {
+    /* height: 50px;
+    width: 200px; */
+    background: red;
+    color: #fff;
+    opacity: 1;
+    display: block;
+    text-align: center;
+    width: 280px;
+    margin-bottom: 50px;
+    /* height: 100px; */
+}
+.wrapper-2 {
+    background: red;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0;
+    right: 0; */
+    /* width: 10%; */
+    height: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.wrapper > .box {
+    background: green;
+    height: 50px;
+    /* padding: auto; */
+    /* position: relative;
+    top: -180px; */
+}
+.wrapper > .subtitle {
+    background: grey;
+    height: 50px;
+    position: relative;
+    /* top: 1px; */
+    /* bottom: 0px;
+    right: 150px; */
+    /* right: */
+    /* padding: auto; */
+    /* position: relative;
+    top: -180px; */
+
+}
+
+.span-wrapper{
+    background: purple;
+    color: #fff;
+    display: inline-block;
+}
+.main{
+    display: flex;
+    background: black;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+/* 
+    justify-content: flex-start; */
+    height: 100px;
+    align-items: center;
+    color: #fff;
+
+}
+
+.main > div{
+    height: 10px;
+    width: fit-content;
+    /* background: #A3045F;
+    color: #fff; */
+    padding: 5px;
+    font-weight: 700;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    /* flex-grow: 2; */
+    /* flex: 1 1 300px; */
+    /* border: 5px solid #D39C0B; */
+}
+
+.two{
+    display: flex;
+    color: red;
+    /* flex-basis: 300px; */
+    /* flex-shrink: 1; */
+    /* background: white; */
+    /* flex-grow: 5; */
+    /* justify-content: center; */
+    /* order: 1; */
+    /* align-self: center; */
+
+}
+.two:hover{
+    color: green;
+}
+input[type="text"]::before{
+    /* color: purple;
+    font-size: 60px; */
+    content: url('mmmmm');
+}
+/* p::first-line{
+   color: red; 
+} */
+/* .headline > div:nth-child(1){
+    color: red;
+} */
+
+@media (max-width: 900) {
+    .main {
+        flex-direction: column;
+        }
+
+    body {
+        background-color: red;
+    }
+    .main, .headline {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+
+    body {
+        background-color: lightgreen;
+    }
+    .main, .headline {
+        display: none;
+    }
+}
+
+.team {
+    padding: 10px;
+}
+.team p:nth-child(even)  {
+    background: blue;
+  
+  color: white;
+} 
+
+@media (min-width: 767px) and (max-width: 1023px) {
+
+    .che{
+        background: red;
+        color: white;
+    }
+    
+}
+
+
+.index-container {
+    background-color: red;
+    height: 200px;
+    padding: 45px;
+    color: #fff;
+}
+
+.card-header, .card-footer{
+    background-color: #000000 !important;
+    color: #fff !important;
+}
+
+.house-game-card-img{
+    width: 200px;
+    height: 150px;
+}
+
+.house-game-cards {
+    width: 18rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer{
+    background: #343a40;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    padding: 30px;
+}
